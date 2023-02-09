@@ -956,3 +956,126 @@
 //   },
 //   // Change code above this line
 // };
+// Module 4
+ 
+// module 4 1/48
+
+// function makePizza() {
+//     return "Your pizza is being prepared, please wait.";
+//   }
+//   // Change code below this line
+  
+//   const result = makePizza();
+//   const pointer = makePizza;
+
+// module 4 2/48
+
+// function deliverPizza(pizzaName) {
+//     return `Delivering ${pizzaName} pizza.`;
+//   }
+  
+//   function makePizza(pizzaName, makeMessage) {
+//     return `Pizza ${pizzaName} is being prepared, please wait...`;
+//   }
+  
+//   // Chande code below this line
+//   function makeMessage(pizzaName, callback) {
+//     return callback (pizzaName);
+//   }
+
+// module 4 3/48
+
+// function makePizza(pizzaName, callback) {
+//     console.log(`Pizza ${pizzaName} is being prepared, please wait...`);
+//     callback(pizzaName);
+//   }
+  
+//   makePizza("Royal Grand", function deliverPizza(pizzaName) {
+//     console.log(`Delivering pizza ${pizzaName}.`);
+//   });
+//   // Change code below this line
+  
+//   makePizza("Ultracheese", function eatPizza(pizzaName) {
+//     console.log (`Eating pizza ${pizzaName}.`);
+//   });
+
+// module 4 4/48
+
+// const pizzaPalace = {
+//     pizzas: ["Ultracheese", "Smoked", "Four meats"],
+//     order(pizzaName, onSuccess, onError) {
+//         if (this.pizzas.includes(pizzaName)){
+//             console.log(makePizza(pizzaName))
+//         }
+//         console.log(onError(`There is no pizza with a name ${pizzaName} in the assortment.`))
+//     },
+//   };
+//   // Change code above this line
+  
+//   // Callback for onSuccess
+//   function makePizza(pizzaName) {
+//     return `Your order is accepted. Cooking pizza ${pizzaName}.`;
+//   }
+  
+//   // Callback for onError
+//   function onOrderError(error) {
+//     return `Error! ${error}`;
+//   }
+  
+//   // Method calls with callbacks
+//   pizzaPalace.order("Smoked", makePizza, onOrderError);
+//   pizzaPalace.order("Four meats", makePizza, onOrderError);
+//   pizzaPalace.order("Big Mike", makePizza, onOrderError);
+//   pizzaPalace.order("Vienna", makePizza, onOrderError);
+
+
+// module 4 5/48
+
+// function calculateTotalPrice(orderedItems) {
+//     let totalPrice = 0;
+//     // Change code below this line
+  
+//     // for (let i = 0; i < orderedItems.length; i += 1) {
+//     //   totalPrice += orderedItems[i];
+//     // }
+//     orderedItems.forEach(function (number) {
+//     totalPrice += number;
+      
+//     })
+  
+//     // Change code above this line
+//     return totalPrice;
+//   }
+
+// module 4 6/48
+
+// function filterArray(numbers, value) {
+//     const filteredNumbers = [];
+//     // Change code below this line
+//   numbers.forEach(function (number) {
+//     if (number > value) {
+//       filteredNumbers.push(number);
+//        }
+//   });
+  
+//     // Change code above this line
+//     return filteredNumbers;
+//   }
+
+// module 4 7/48
+
+function getCommonElements(firstArray, secondArray) {
+    const commonElements = [];
+    // Change code below this line
+  
+    firstArray.forEach(function(element) {
+      if (element === secondArray)
+    // for (let i = 0; i < firstArray.length; i += 1) {
+    //   if (secondArray.includes(firstArray[i])) {
+    //     commonElements.push(firstArray[i]);
+    //   }
+    // }
+  
+    return commonElements;
+    // Change code above this line
+  }
