@@ -1064,18 +1064,93 @@
 
 // module 4 7/48
 
-function getCommonElements(firstArray, secondArray) {
-    const commonElements = [];
-    // Change code below this line
+// function getCommonElements(firstArray, secondArray) {
+//     const commonElements = [];
+//     // Change code below this line
   
-    firstArray.forEach(function(element) {
-      if (element === secondArray)
-    // for (let i = 0; i < firstArray.length; i += 1) {
-    //   if (secondArray.includes(firstArray[i])) {
-    //     commonElements.push(firstArray[i]);
-    //   }
-    // }
+//     firstArray.forEach(function(element) {
+//       if (firstArray.includes(element) === secondArray.includes(element)) {
+//         commonElements.push(element);
+//       }
+//     });
+
+//     // for (let i = 0; i < firstArray.length; i += 1) {
+//     //   if (secondArray.includes(firstArray[i])) {
+//     //     commonElements.push(firstArray[i]);
+//     //   }
+//     // }
   
-    return commonElements;
-    // Change code above this line
-  }
+//     console.log(commonElements);
+//   }
+//     // Change code above this line
+  
+//   getCommonElements([1, 2, 3], [2, 4]);
+//   getCommonElements([1, 2, 3], [2, 1, 17, 19]);
+//   getCommonElements([24, 12, 27, 3], [12, 8, 3, 36, 27]);
+//   getCommonElements([10, 20, 30, 40], [4, 30, 17, 10, 40]);
+//   getCommonElements([1, 2, 3], [10, 20, 30]);
+
+// module 4 8/48
+
+// Change code below this line
+
+// const calculateTotalPrice = (quantity, pricePerItem) => {
+//   // Change code above this line
+//   return quantity * pricePerItem;
+// }
+
+// module 4 10/48
+
+// // Change code below this line
+// const calculateTotalPrice = (orderedItems) => {
+//   let totalPrice = 0;
+
+//   orderedItems.forEach ((item) => {
+//     totalPrice += item;
+//   });
+
+//   return totalPrice;
+// }
+// // Change code above this line
+
+// module 4 12/48
+
+// // Change code below this line
+// const getCommonElements = (firstArray, secondArray) => {
+//   const commonElements = [];
+
+//   firstArray.forEach((element) => {
+//     if (secondArray.includes(element)) {
+//       commonElements.push(element);
+//     }
+//   });
+
+//   // Change code above this line
+//   return commonElements;
+// }
+
+// module 4 13/48
+
+function changeEven(numbers, value) {
+  // Change code below this line
+  const newArray = [];
+  numbers.forEach(element => {
+    if (element % 2 === 0) {
+    newArray.push(element + value);
+    }
+  });
+  // for (let i = 0; i < numbers.length; i += 1) {
+  //   if (numbers[i] % 2 === 0) {
+  //     numbers[i] = numbers[i] + value;
+  //   }
+  // }console.log(changeEven);
+  // // Change code above this line
+}
+
+changeEven([1, 2, 3, 4, 5], 10);
+
+
+
+
+
+
