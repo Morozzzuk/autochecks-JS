@@ -1132,7 +1132,6 @@ const getCommonElements = (firstArray, secondArray) => {
 // module 4 13/48
 
 // function changeEven(numbers, value) {
-//   // Change code below this line
 //   const newArray = [];
 //   numbers.forEach(number => {
 //     if (number % 2 === 0) {
@@ -1141,12 +1140,8 @@ const getCommonElements = (firstArray, secondArray) => {
 //       newArray.push(number);
 //     }
 //   });
-//   // for (let i = 0; i < numbers.length; i += 1) {
-//   //   if (numbers[i] % 2 === 0) {
-//   //     numbers[i] = numbers[i] + value;
-//   //   }
+
 //   return newArray;
-//   // Change code above this line
 // };
 
 // changeEven([1, 2, 3, 4, 5], 10);
@@ -1154,7 +1149,7 @@ const getCommonElements = (firstArray, secondArray) => {
 // module 4 14/48
 
 // const planets = ["Earth", "Mars", "Venus", "Jupiter"];
-// // Change code below this line
+
 // const planetsLengths = planets.map(planet => planet.length);
 // console.log(planets);
 
@@ -1180,7 +1175,6 @@ const getCommonElements = (firstArray, secondArray) => {
 //   { title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
 //   { title: "Enemy of God", author: "Bernard Cornwell", rating: 8.67 },
 // ];
-// // Change code below this line
 
 // const titles = books.map(book => book.title);
 // console.log(titles);
@@ -1204,7 +1198,6 @@ const getCommonElements = (firstArray, secondArray) => {
 //     genres: ["horror", "mysticism"],
 //   },
 // ];
-// // Change code below this line
 
 // const genres = books.flatMap(book => book.genres);
 // console.log(genres);
@@ -1215,3 +1208,205 @@ const getCommonElements = (firstArray, secondArray) => {
 // const getUserNames = users => {return name = users.map(user => user.name)};
 
 // module 4 18/48
+
+// const getUserEmails = users => {return email = users.map(user => user.email)};
+
+// module 4 19/48
+
+// const numbers = [17, 24, 82, 61, 36, 18, 47, 52, 73];
+
+// const evenNumbers = numbers.filter(value => value % 2 === 0);
+// const oddNumbers = numbers.filter(value => value % 2 !== 0);
+
+// module 4 20/48
+
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     genres: ["adventure", "history"],
+//   },
+//   {
+//     title: "Beside Still Waters",
+//     author: "Robert Sheckley",
+//     genres: ["fiction", "mysticism"],
+//   },
+//   {
+//     title: "Redder Than Blood",
+//     author: "Tanith Lee",
+//     genres: ["horror", "mysticism", "adventure"],
+//   },
+// ];
+// const allGenres = books.flatMap(book => book.genres);
+// console.log(allGenres);
+// const uniqueGenres = allGenres.filter((genres, index, array) => array.indexOf(genres) === index);
+// console.log(uniqueGenres);
+
+// module 4 21/48
+
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     rating: 8.38,
+//   },
+//   {
+//     title: "Beside Still Waters",
+//     author: "Robert Sheckley",
+//     rating: 8.51,
+//   },
+//   {
+//     title: "The Dream of a Ridiculous Man",
+//     author: "Fyodor Dostoevsky",
+//     rating: 7.75,
+//   },
+//   { title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
+//   { title: "Enemy of God", author: "Bernard Cornwell", rating: 8.67 },
+// ];
+
+// const MIN_RATING = 8;
+// const AUTHOR = "Bernard Cornwell";
+
+// const topRatedBooks = books.filter(book => book.rating >= MIN_RATING);
+// console.log(topRatedBooks);
+// const booksByAuthor = books.filter (book => book.author === AUTHOR);
+// console.log(booksByAuthor);
+
+// module 4 22/48
+
+// Change code below this line
+// const getUsersWithEyeColor = (users, color) => {
+ 
+// return name = users.filter(user => user.eyeColor === color);
+//   };
+  // Change code above this line
+
+  // module 4 24/48
+
+  // const getUsersWithFriend = (users, friendName) => {
+  //   return users.filter(user => user.friends.includes(friendName));
+  //   };
+
+  // module 4 25/48
+
+// const getFriends = (users) => {
+//   const allFriends = users.flatMap(user => user.friends);
+//  return allFriends.filter((friend, index, array) => array.indexOf(friend) === index);
+// };
+
+// module 4 26/48
+
+// const getActiveUsers = (users) => {
+//   return users.filter(user => user.isActive === true);
+// };
+
+// module 4 27/48
+
+// const getInactiveUsers = (users) => {
+//   return users.filter(user => user.isActive === false);
+// };
+
+// module 4 28/48
+
+// const books = [
+//   {
+//     title: 'The Last Kingdom',
+//     author: 'Bernard Cornwell',
+//     rating: 8.38,
+//   },
+//   {
+//     title: 'Beside Still Waters',
+//     author: 'Robert Sheckley',
+//     rating: 8.51,
+//   },
+//   {
+//     title: 'The Dream of a Ridiculous Man',
+//     author: 'Fyodor Dostoevsky',
+//     rating: 7.75,
+//   },
+//   { title: 'Redder Than Blood', author: 'Tanith Lee', rating: 7.94 },
+// ];
+// const BOOK_TITLE = 'The Dream of a Ridiculous Man';
+// const AUTHOR = 'Robert Sheckley';
+// // Change code below this line
+
+// const bookWithTitle = books.find( book => book.title 
+//  === BOOK_TITLE);
+// const bookByAuthor = books.find( book => book.author === AUTHOR);
+
+// module 4 29/48
+
+// const getUserWithEmail = (users, email) => {
+//   return name = users.find(user => user.email === email);
+//   };
+
+// module 4 30/48
+
+// const firstArray = [26, 94, 36, 18];
+// const secondArray = [17, 61, 23];
+// const thirdArray = [17, 26, 94, 61, 36, 23, 18];
+// // Change code below this line
+
+// const eachElementInFirstIsEven = firstArray.every(value => value % 2 === 0);
+// const eachElementInFirstIsOdd = firstArray.every(value => value % 2 !== 0);
+
+// const eachElementInSecondIsEven = secondArray.every(value => value % 2 === 0);
+// const eachElementInSecondIsOdd = secondArray.every(value => value % 2 !== 0);
+
+// const eachElementInThirdIsEven = thirdArray.every(value => value % 2 === 0);
+// const eachElementInThirdIsOdd = thirdArray.every(value => value % 2 !== 0);
+
+// module 4 31/48
+
+// const isEveryUserActive = (users) => {
+//   return users.every(user => user.isActive);
+// };
+
+// module 4 32/48
+
+// const firstArray = [26, 94, 36, 18];
+// const secondArray = [17, 61, 23];
+// const thirdArray = [17, 26, 94, 61, 36, 23, 18];
+// // Change below this line
+
+// const anyElementInFirstIsEven = firstArray.some(value => value % 2 === 0);
+// const anyElementInFirstIsOdd = firstArray.some(value => value % 2 !== 0);
+
+// const anyElementInSecondIsEven = secondArray.some(value => value % 2 === 0);
+// const anyElementInSecondIsOdd = secondArray.some(value => value % 2 !== 0);
+
+// const anyElementInThirdIsEven = thirdArray.some(value => value % 2 === 0);
+// const anyElementInThirdIsOdd = thirdArray.some(value => value % 2 !== 0);
+
+// module 4 33/48
+
+const isAnyUserActive = users => {
+  return users.some(user => user.isActive);
+};
+
+// module 4 34/48
+
+// const players = {
+//   mango: 1270,
+//   poly: 468,
+//   ajax: 710,
+//   kiwi: 244
+// };
+// const playtimes = Object.values(players); // [1270, 468, 710, 244]
+// // Change code below this line
+
+// const totalPlayTime = playtimes.reduce((previousValue, number) => {
+//   return previousValue + number;
+// }, 0);
+
+// // Change code above this line
+// const averagePlayTime = totalPlayTime / playtimes.length;
+
+// module 4 35/48
+
+// const totalAveragePlaytimePerGame = players.reduce((avarage, player) => {
+//   return avarage + player.playtime / player.gamesPlayed
+//  },0);
+
+// module 4 36/48
+
