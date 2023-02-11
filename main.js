@@ -1410,3 +1410,8 @@ const isAnyUserActive = users => {
 
 // module 4 36/48
 
+const calculateTotalBalance = users => {
+  users.reduce((sum, user) => {
+    return sum + user.balance;
+  }, 0);
+};
