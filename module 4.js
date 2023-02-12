@@ -534,73 +534,6 @@ const getCommonElements = (firstArray, secondArray) => {
   
   // module 4 37/48
   
-  // const users =
-  // [
-  //   {
-  //     name: "Moore Hensley",
-  //     email: "moorehensley@indexia.com",
-  //     eyeColor: "blue",
-  //     friends: ["Sharron Pace"],
-  //     isActive: false,
-  //     balance: 2811,
-  //     gender: "male"
-  //   },
-  //   {
-  //     name: "Sharlene Bush",
-  //     email: "sharlenebush@tubesys.com",
-  //     eyeColor: "blue",
-  //     friends: ["Briana Decker", "Sharron Pace"],
-  //     isActive: true,
-  //     balance: 3821,
-  //     gender: "female"
-  //   },
-  //   {
-  //     name: "Ross Vazquez",
-  //     email: "rossvazquez@xinware.com",
-  //     eyeColor: "green",
-  //     friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
-  //     isActive: false,
-  //     balance: 3793,
-  //     gender: "male"
-  //   },
-  //   {
-  //     name: "Elma Head",
-  //     email: "elmahead@omatom.com",
-  //     eyeColor: "green",
-  //     friends: ["Goldie Gentry", "Aisha Tran"],
-  //     isActive: true,
-  //     balance: 2278,
-  //     gender: "female"
-  //   },
-  //   {
-  //     name: "Carey Barr",
-  //     email: "careybarr@nurali.com",
-  //     eyeColor: "blue",
-  //     friends: ["Jordan Sampson", "Eddie Strong"],
-  //     isActive: true,
-  //     balance: 3951,
-  //     gender: "male"
-  //   },
-  //   {
-  //     name: "Blackburn Dotson",
-  //     email: "blackburndotson@furnigeer.com",
-  //     eyeColor: "brown",
-  //     friends: ["Jacklyn Lucas", "Linda Chapman"],
-  //     isActive: false,
-  //     balance: 1498,
-  //     gender: "male"
-  //   },
-  //   {
-  //     name: "Sheree Anthony",
-  //     email: "shereeanthony@kog.com",
-  //     eyeColor: "brown",
-  //     friends: ["Goldie Gentry", "Briana Decker"],
-  //     isActive: true,
-  //     balance: 2764,
-  //     gender: "female"
-  //   }
-  // ];
-  
   // const getTotalFriendCount = users.reduce((total, user) => {
   //   console.log('total', total);
   //   console.log('user', user);
@@ -658,28 +591,6 @@ const getCommonElements = (firstArray, secondArray) => {
 
 // module 4 41/48
 
-// const students = [
-//     { name: "Mango", score: 83 },
-//     { name: "Poly", score: 59 },
-//     { name: "Ajax", score: 37 },
-//     { name: "Kiwi", score: 94 },
-//   ];
-  
-//   const inAscendingScoreOrder = students.sort(
-//     (firstStudent, secondStudent) => firstStudent.score - secondStudent.score
-//   );
-//   console.log(inAscendingScoreOrder);
-//   const inDescendingScoreOrder = students.sort(
-//     (firstStudent, secondStudent) => secondStudent.score - firstStudent.score
-//   );
-//   console.log(inDescendingScoreOrder);
-//   const inAlphabeticalOrder = students.sort((firstStudent, secondStudent) =>
-//     firstStudent.name.localeCompare(secondStudent.name)
-//   );
-//   console.log(inAlphabeticalOrder);
-
-// module 4 42/48
-
 // const books = [
 //     {
 //       title: "The Last Kingdom",
@@ -713,74 +624,131 @@ const getCommonElements = (firstArray, secondArray) => {
 //   const sortedByDescentingRating = [...books].sort((firstBook, secondBook) => secondBook.rating - firstBook.rating);
 //   console.log(sortedByDescentingRating);
 
+// module 4 42/48
+
+// const users =
+// [
+//     {
+//       name: "Moore Hensley",
+//       email: "moorehensley@indexia.com",
+//       eyeColor: "blue",
+//       friends: ["Sharron Pace"],
+//       isActive: false,
+//       balance: 2811,
+//       gender: "male"
+//     },
+//     {
+//       name: "Sharlene Bush",
+//       email: "sharlenebush@tubesys.com",
+//       eyeColor: "blue",
+//       friends: ["Briana Decker", "Sharron Pace"],
+//       isActive: true,
+//       balance: 3821,
+//       gender: "female"
+//     },
+//     {
+//       name: "Ross Vazquez",
+//       email: "rossvazquez@xinware.com",
+//       eyeColor: "green",
+//       friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
+//       isActive: false,
+//       balance: 3793,
+//       gender: "male"
+//     },
+//     {
+//       name: "Elma Head",
+//       email: "elmahead@omatom.com",
+//       eyeColor: "green",
+//       friends: ["Goldie Gentry", "Aisha Tran"],
+//       isActive: true,
+//       balance: 2278,
+//       gender: "female"
+//     },
+//     {
+//       name: "Carey Barr",
+//       email: "careybarr@nurali.com",
+//       eyeColor: "blue",
+//       friends: ["Jordan Sampson", "Eddie Strong"],
+//       isActive: true,
+//       balance: 3951,
+//       gender: "male"
+//     },
+//     {
+//       name: "Blackburn Dotson",
+//       email: "blackburndotson@furnigeer.com",
+//       eyeColor: "brown",
+//       friends: ["Jacklyn Lucas", "Linda Chapman"],
+//       isActive: false,
+//       balance: 1498,
+//       gender: "male"
+//     },
+//     {
+//       name: "Sheree Anthony",
+//       email: "shereeanthony@kog.com",
+//       eyeColor: "brown",
+//       friends: ["Goldie Gentry", "Briana Decker"],
+//       isActive: true,
+//       balance: 2764,
+//       gender: "female"
+//     }
+//   ];
+//   const sortByAscendingBalance = users =>
+//   [...users].sort((firstUser, secondUser) => { 
+//     return firstUser.balance - secondUser.balance;
+//   });
+
 // module 4 43/48
-[
-    {
-      name: "Moore Hensley",
-      email: "moorehensley@indexia.com",
-      eyeColor: "blue",
-      friends: ["Sharron Pace"],
-      isActive: false,
-      balance: 2811,
-      gender: "male"
-    },
-    {
-      name: "Sharlene Bush",
-      email: "sharlenebush@tubesys.com",
-      eyeColor: "blue",
-      friends: ["Briana Decker", "Sharron Pace"],
-      isActive: true,
-      balance: 3821,
-      gender: "female"
-    },
-    {
-      name: "Ross Vazquez",
-      email: "rossvazquez@xinware.com",
-      eyeColor: "green",
-      friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"],
-      isActive: false,
-      balance: 3793,
-      gender: "male"
-    },
-    {
-      name: "Elma Head",
-      email: "elmahead@omatom.com",
-      eyeColor: "green",
-      friends: ["Goldie Gentry", "Aisha Tran"],
-      isActive: true,
-      balance: 2278,
-      gender: "female"
-    },
-    {
-      name: "Carey Barr",
-      email: "careybarr@nurali.com",
-      eyeColor: "blue",
-      friends: ["Jordan Sampson", "Eddie Strong"],
-      isActive: true,
-      balance: 3951,
-      gender: "male"
-    },
-    {
-      name: "Blackburn Dotson",
-      email: "blackburndotson@furnigeer.com",
-      eyeColor: "brown",
-      friends: ["Jacklyn Lucas", "Linda Chapman"],
-      isActive: false,
-      balance: 1498,
-      gender: "male"
-    },
-    {
-      name: "Sheree Anthony",
-      email: "shereeanthony@kog.com",
-      eyeColor: "brown",
-      friends: ["Goldie Gentry", "Briana Decker"],
-      isActive: true,
-      balance: 2764,
-      gender: "female"
-    }
-  ];
-  const sortByAscendingBalance = users =>
-  [...users].sort((firstUser, secondUser) => { firstUser.balance - secondUser.balance;
-  });
-  console.log(sortByAscendingBalance);
+
+// const sortByDescendingFriendCount = users => 
+//   [...users].sort((firstUser, secondUser) => {
+//     return secondUser.friends.length - firstUser.friends.length
+//   });
+
+// module 4 44/48
+
+// const sortByName = users => [...users].sort((firstUser, secondUser) => {
+//   return firstUser.name.localeCompare(secondUser.name)
+// });
+
+// module 4 45/48
+
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     rating: 8.38,
+//   },
+//   {
+//     title: "Beside Still Waters",
+//     author: "Robert Sheckley",
+//     rating: 8.51,
+//   },
+//   {
+//     title: "The Dream of a Ridiculous Man",
+//     author: "Fyodor Dostoevsky",
+//     rating: 7.75,
+//   },
+//   { title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
+//   {
+//     title: "The Dreams in the Witch House",
+//     author: "Howard Lovecraft",
+//     rating: 8.67,
+//   },
+// ];
+// const MIN_BOOK_RATING = 8;
+// // Change code below this line
+
+// const names = [...books].filter(book => book.rating > MIN_BOOK_RATING).map(book => book.author, books.rating).sort((a, b) => a.localeCompare(b));;
+// console.log(names);
+
+// module 4 46/48
     
+// const getNamesSortedByFriendCount = users => {
+//   return [...users].sort((firstUser, secondUser) => firstUser.friends.length - secondUser.friends.length).map(user => user.name)
+// };
+
+// module 4 47/48
+
+// const getSortedFriends = users => {
+//   return [...users].flatMap(user => user.friends).filter((friend, index, array) => array.indexOf(friend) === index).sort();
+//   };
