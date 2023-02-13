@@ -738,22 +738,30 @@ const users =
 // const MIN_BOOK_RATING = 8;
 // // Change code below this line
 
-// const names = [...books].filter(book => book.rating > MIN_BOOK_RATING).map(book => book.author, books.rating).sort((a, b) => a.localeCompare(b));;
+// const names = [...books]
+// .filter(book => book.rating > MIN_BOOK_RATING)
+// .map(book => book.author, books.rating)
+// .sort((a, b) => a.localeCompare(b));
 // console.log(names);
 
 // module 4 46/48
     
 // const getNamesSortedByFriendCount = users => {
-//   return [...users].sort((firstUser, secondUser) => firstUser.friends.length - secondUser.friends.length).map(user => user.name)
+//   return [...users]
+// .sort((firstUser, secondUser) => firstUser.friends.length - secondUser.friends.length)
+// .map(user => user.name)
 // };
 
 // module 4 47/48
 
 // const getSortedFriends = users => {
-//   return [...users].flatMap(user => user.friends).filter((friend, index, array) => array.indexOf(friend) === index).sort();
+//   return [...users]
+//   .flatMap(user => user.friends)
+//   .filter((friend, index, array) => array.indexOf(friend) === index)
+//   .sort();
 //   };
 
-// module 4 47/48
+// module 4 48/48
 
 const byGender = (users, gender) = users.filter(user => user.gender === gender);
 console.log(byGender);
@@ -766,5 +774,7 @@ console.log(byGender);
 //   console.log(calculateTotalBalance);
 // const gender =
 
-//   const getTotalBalanceByGender = (users, gender) => [...users].filter(user => user.gender === gender).reduce((acc, user) => acc + user.balance, 0);
-// console.log(getTotalBalanceByGender);
+  // const getTotalBalanceByGender = (users, gender) => [...users]
+  // .filter(user => user.gender === gender)
+  // .reduce((acc, user) => acc + user.balance, 0);
+  // console.log(getTotalBalanceByGender);
