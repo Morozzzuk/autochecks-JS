@@ -763,8 +763,8 @@ const users =
 
 // module 4 48/48
 
-const byGender = (users, gender) = users.filter(user => user.gender === gender);
-console.log(byGender);
+// const byGender = (users, gender) = users.filter(user => user.gender === gender);
+// console.log(byGender);
 // const topRatedBooks = books.filter(book => book.rating >= MIN_RATING);
 // const calculateTotalBalance = users.reduce((sum, user) => {
 //     console.log('sum', sum);
@@ -778,3 +778,5 @@ console.log(byGender);
   // .filter(user => user.gender === gender)
   // .reduce((acc, user) => acc + user.balance, 0);
   // console.log(getTotalBalanceByGender);
+
+  // console.log(_.union([1, 2, 3], [3, 4, 5, 6, 7,6,8,]));
