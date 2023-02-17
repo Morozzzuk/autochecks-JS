@@ -360,3 +360,128 @@
 // }
 
 //! module 5 16/20
+
+// // * Example
+// // class User {
+// //   // Оголошення та ініціалізація статичної властивості
+// //   static Roles = {
+// //     ADMIN: "admin",
+// //     EDITOR: "editor",
+// //   };
+
+// //   #email;
+// //   #role;
+
+// //   constructor({ email, role }) {
+// //     this.#email = email;
+// //     this.#role = role;
+// //   }
+
+// //   get role() {
+// //     return this.#role;
+// //   }
+
+// //   set role(newRole) {
+// //     this.#role = newRole;
+// //   }
+// // }
+
+// // const mango = new User({
+// //   email: "mango@mail.com",
+// //   role: User.Roles.ADMIN,
+// // });
+
+// // console.log(mango.Roles); // undefined
+// // console.log(User.Roles); // { ADMIN: "admin", EDITOR: "editor" }
+
+// // console.log(mango.role); // "admin"
+// // mango.role = User.Roles.EDITOR;
+// // console.log(mango.role); // "editor"
+
+// class Car {
+//   // Change code below this line
+//   static MAX_PRICE = 50000;
+ 
+//   #price;
+
+//   constructor({ price }) {
+//     this.#price = price;
+//   }
+
+//   get price() {
+//     return this.#price;
+//   }
+
+//   set price(newPrice) {
+//     if (newPrice < Car.MAX_PRICE) {
+//       return this.#price = newPrice;
+//   } else return this.#price;
+
+// // // * Variant 2
+// //   newPrice < Car.MAX_PRICE ? this.#price = newPrice : this.#price
+  
+//   }
+//   // Change code above this line
+// }
+
+// const audi = new Car({ price: 35000 });
+// console.log(audi.price); // 35000
+
+// audi.price = 49000;
+// console.log(audi.price); // 49000
+
+// audi.price = 51000;
+// console.log(audi.price); // 49000
+
+//! module 5 17/20
+
+// class Car {
+//   static #MAX_PRICE = 50000;
+//   // Change code below this line
+// static checkPrice(price) {
+//      if (price > Car.#MAX_PRICE){
+//        return "Error! Price exceeds the maximum";
+//      } else return "Success! Price is within acceptable limits";
+
+// // * Variant 2
+//      return price > Car.#MAX_PRICE ? "Error! Price exceeds the maximum" : "Success! Price is within acceptable limits"
+//   }
+//   // Change code above this line
+//   constructor({ price }) {
+//     this.price = price;
+//   }
+// }
+
+// const audi = new Car({ price: 36000 });
+// const bmw = new Car({ price: 64000 });
+
+// console.log(Car.checkPrice(audi.price)); // "Success! Price is within acceptable limits"
+// console.log(Car.checkPrice(bmw.price)); // "Error! Price exceeds the maximum"
+
+//! module 5 18/20
+
+class User {
+  constructor(email) {
+    this.email = email;
+  }
+
+  get email() {
+    return this.email;
+  }
+
+  set email(newEmail) {
+    this.email = newEmail;
+  }
+}
+// Change code below this line
+
+class Admin extends User {
+  static AccesLevel = {BASIC: "basic", SUPERUSER: "superuser"};
+
+}
+console.log(AccesLevel[AccesLevel])
+// * 1. Оголоси клас Admin, який наслідує від класу User;     
+// * 2. Додай класу Admin публічну статичну властивість AccessLevel
+// * 3. 
+
+    
