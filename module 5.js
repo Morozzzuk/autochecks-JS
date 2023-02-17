@@ -1,4 +1,4 @@
-// module 5 1/20
+//! module 5 1/20
 
 // const pizzaPalace = {
 //     pizzas: ["Supercheese", "Smoked", "Four meats"],
@@ -19,7 +19,7 @@
 //   };
   
 
-//   module 5 2/20
+//!   module 5 2/20
 
 // const customer = {
 //     username: "Mango",
@@ -52,7 +52,7 @@
 //   console.log(customer.getBalance()); // 19750
 //   console.log(customer.getOrders()); // ["Burger", "Pizza", "Salad", "Steak"]
 
-  //   module 5 3/20
+  //!   module 5 3/20
 
 //   const historyService = {
 //     orders: [
@@ -79,7 +79,7 @@
 //     // Change code above this line
 //   };
 
-//   module 5 4/20
+//!   module 5 4/20
 
 // const parent = {
 //   name: "Stacey",
@@ -95,7 +95,7 @@
 // child.name = "Jason";
 // child.age = 27;
 
-//   module 5 5/20
+//!   module 5 5/20
 
 // const ancestor = {
 //   name: "Paul",
@@ -116,12 +116,12 @@
 
 // // Change code above this line
 
-//   module 5 6/20
+//!   module 5 6/20
 // class Car {
   
 // }
 
-//   module 5 7/20
+//!   module 5 7/20
 
 // class Car {
 //   // Change code below this line
@@ -131,7 +131,7 @@
 //   this.price = price;
 // }
 
-//   module 5 8/20
+//!   module 5 8/20
 
 // class Car {
 //   // Change code below this line
@@ -143,7 +143,7 @@
 //   // Change code above this line
 // }
 
-//   module 5 9/20
+//!   module 5 9/20
 
 // class Car {
 //   constructor({ brand, model, price }) {
@@ -162,7 +162,7 @@
 //   // Change code above this line
 // }
 
-//   module 5 10/20
+//!   module 5 10/20
 
 // class Storage {
 //   constructor(items){
@@ -187,7 +187,7 @@
 // storage.removeItem("Prolonger");
 // console.log(storage.getItems()); // ["Nanitoids", "Antigravitator", "Droid"]
 
-//   module 5 11/20
+//!   module 5 11/20
 
 // class StringBuilder {
 //   constructor(initialValue) {
@@ -217,7 +217,7 @@
 // builder.padBoth("=");
 // console.log(builder.getValue()); // "=^.^="
 
-// module 5 12/20
+//! module 5 12/20
 
 // class Car {
 //   // Change code below this line
@@ -236,7 +236,7 @@
 //   // Change code above this line
 // }
 
-// module 5 13/20
+//! module 5 13/20
 
 // class Storage {
 //   // Change code below this line
@@ -266,7 +266,7 @@
 // storage.removeItem("Prolonger");
 // console.log(storage.getItems()); // ["Нанитоиды", "Антигравитатор", "Droid"]
   
-// module 5 14/20
+//! module 5 14/20
 
 // class StringBuilder {
 //   // Change code below this line
@@ -303,7 +303,7 @@
 // builder.padBoth("=");
 // console.log(builder.getValue()); // "=^.^="
 
-// module 5 15/20
+//! module 5 15/20
 
 // class Car {
 //   // Change code below this line
@@ -359,4 +359,4 @@
 //   // Change code above this line
 // }
 
-// module 5 16/20
+//! module 5 16/20
