@@ -460,28 +460,131 @@
 
 //! module 5 18/20
 
-class User {
-  constructor(email) {
-    this.email = email;
-  }
+// class User {
+//   constructor(email) {
+//     this.email = email;
+//     console.log(this.email);
+//   }
 
-  get email() {
-    return this.email;
-  }
+//   get email() {
+//     return this.email;
+//   }
 
-  set email(newEmail) {
-    this.email = newEmail;
-  }
-}
-// Change code below this line
+//   set email(newEmail) {
+//     this.email = newEmail;
+//   }
+// }
+// // Change code below this line
 
-class Admin extends User {
-  static AccesLevel = {BASIC: "basic", SUPERUSER: "superuser"};
+// class Admin extends User {
+//   static AccessLevel = {
+//   BASIC: "basic", 
+//   SUPERUSER: "superuser"};
+// }
+// console.log(Admin.AccessLevel.BASIC)
+// console.log(Admin.AccessLevel.SUPERUSER)    
 
-}
-console.log(AccesLevel[AccesLevel])
-// * 1. Оголоси клас Admin, який наслідує від класу User;     
-// * 2. Додай класу Admin публічну статичну властивість AccessLevel
-// * 3. 
+//! module 5 19/20
 
-    
+// class User {
+//   email;
+
+//   constructor(email) {
+//     this.email = email;
+//   }
+
+//   get email() {
+//     return this.email;
+//   }
+
+//   set email(newEmail) {
+//     this.email = newEmail;
+//   }
+// }
+
+// class Admin extends User {
+//   // Change code below this line
+
+//   static AccessLevel = {
+//     BASIC: "basic",
+//     SUPERUSER: "superuser",
+//   };
+//   constructor({ email, accessLevel}){
+//     super(email);
+//     this.accessLevel = accessLevel;
+//   }
+
+//   // Change code above this line
+// }
+
+// const mango = new Admin({
+//   email: "mango@mail.com",
+//   accessLevel: Admin.AccessLevel.SUPERUSER,
+// });
+
+// console.log(mango.email); // "mango@mail.com"
+// console.log(mango.accessLevel); // "superuser"
+
+//! module 5 20/20
+
+// class User {
+//   email;
+
+//   constructor(email) {
+//     this.email = email;
+//   }
+
+//   get email() {
+//     return this.email;
+//   }
+
+//   set email(newEmail) {
+//     this.email = newEmail;
+//   }
+// }
+// class Admin extends User {
+//   // Change code below this line
+
+//   static AccessLevel = {
+//     BASIC: "basic",
+//     SUPERUSER: "superuser",
+//   };
+//   blacklistedEmails = [];
+//   constructor({ email, accessLevel }) {
+//     super(email);
+//     this.accessLevel = accessLevel;
+//   }
+//   blacklist(email){
+//     this.blacklistedEmails.push(email);
+//   }
+//   isBlacklisted(email) {
+//     // if (this.blacklistedEmails.includes(email)){
+//     //   return true;
+//     // } else return false;
+//     // * Variant 2
+//     return this.blacklistedEmails.includes(email) ? true : false;
+//   }
+
+//   // Change code above this line
+// }
+
+// const mango = new Admin({
+//   email: "mango@mail.com",
+//   accessLevel: Admin.AccessLevel.SUPERUSER,
+// });
+
+// console.log(mango.email); // "mango@mail.com"
+// console.log(mango.accessLevel); // "superuser"
+
+// mango.blacklist("poly@mail.com");
+// console.log(mango.blacklistedEmails); // ["poly@mail.com"]
+// console.log(mango.isBlacklisted("mango@mail.com")); // false
+// console.log(mango.isBlacklisted("poly@mail.com")); // true
+
+const arrayCategories = document.querySelectorAll(".item");
+
+console.log(`Number of categories: ${arrayCategories.length}`);
+arrayCategories.forEach((item) => {
+  console.log(`Category: ${item.firstElementChild.textContent}`);
+  console.log(`Elements: ${item.lastElementChild.children.length}`);
+});
