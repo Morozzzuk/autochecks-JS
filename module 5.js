@@ -579,3 +579,11 @@
 // console.log(mango.blacklistedEmails); // ["poly@mail.com"]
 // console.log(mango.isBlacklisted("mango@mail.com")); // false
 // console.log(mango.isBlacklisted("poly@mail.com")); // true
+
+// const arrayCategories = document.querySelectorAll(".item");
+
+// console.log(`Number of categories: ${arrayCategories.length}`);
+// arrayCategories.forEach((item) => {
+//   console.log(`Category: ${item.firstElementChild.textContent}`);
+//   console.log(`Elements: ${item.lastElementChild.children.length}`);
+// });
